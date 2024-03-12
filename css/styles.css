@@ -747,7 +747,7 @@ ul {
     color: #4d5ae5;
 }
 
-.fmd-checkbox:checked + .fmd-checkbox-label {
+.fmd-checkbox input[type="checkbox"]:checked + label {
     color: #404bbf;
     border: none;
     fill: #F4F4FD;
