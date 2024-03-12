@@ -623,6 +623,7 @@ ul {
 
 .div-modal-button:focus,
 .div-modal-button:active {
+    background-color: #404bbf;
     border: none;
 }
 
@@ -682,12 +683,13 @@ ul {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.fmd-input:hover {
+.fmd-input:focus,
+.fmd-input:active {
     border-color: #4D5AE5;
 }
 
-.fmd-input:focus .fmd-svg,
-.fmd-input:active .fmd-svg {
+.fmd-input:focus + .fmd-svg,
+.fmd-input:active + .fmd-svg {
     fill: #4D5AE5;
 }
 
@@ -713,10 +715,10 @@ ul {
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-color: #4D5AE5;
 }
 
-.fmd-textarea:hover {
+.fmd-textarea:focus,
+.fmd-textarea:active {
     border-color: #4D5AE5;
 }
 
@@ -743,6 +745,12 @@ ul {
 
 .fmd-checkbox-link {
     color: #4d5ae5;
+}
+
+.fmd-checkbox:checked + .fmd-checkbox-label {
+    color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .fmd-button {
